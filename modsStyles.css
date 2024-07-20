@@ -1,0 +1,150 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #e1e4e8;
+}
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+#video-overlay {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #a0a4a8;
+}
+
+.download_link {
+    margin-right: 1rem;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0);
+}
+
+section {
+    margin-bottom: 2rem;
+    background: rgba(0, 0, 0, 0);
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#mods .mod {
+    background: rgba(255, 255, 255, 0);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+#mods .mod:hover {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
+    transform: scale(1.05);
+}
+
+#mods a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+#mods h1{
+    font-size: 200%;
+}
+
+#mods h1, #mods h4 {
+    text-align: center;
+}
+
+#mods .mod img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto; 
+}
+
+#logo {
+    height: 70px;
+    padding: 0;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    #mods .mod {
+        padding: 1rem;
+    }
+}
